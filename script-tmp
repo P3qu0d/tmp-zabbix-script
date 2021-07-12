@@ -9,25 +9,25 @@
 export PATH="/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/games"
 
 # Instalando os repositórios atuais:
-#apt-get install sudo gnupg -y 
+apt-get install sudo gnupg -y 
 
-#set -e
+set -e
 
-#wget http://repo.mysql.com/mysql-apt-config_0.8.15-1_all.deb
+wget http://repo.mysql.com/mysql-apt-config_0.8.15-1_all.deb
 
-#dpkg -i mysql-apt-config_0.8.15-1_all.deb
+dpkg -i mysql-apt-config_0.8.15-1_all.deb
 
-#apt-key adv --keyserver keys.gnupg.net --recv-keys 8C718D3B5072E1F5
+apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 8C718D3B5072E1F5
 
-#apt update
+apt update
 
-#wget https://repo.zabbix.com/zabbix/5.0/debian/pool/main/z/zabbix-release/zabbix-release_5.0-1%2Bbuster_all.deb
+wget https://repo.zabbix.com/zabbix/5.0/debian/pool/main/z/zabbix-release/zabbix-release_5.0-1%2Bbuster_all.deb
 
-#apt install -y mysql-community-server 
+apt install -y mysql-community-server 
 
-#dpkg -i zabbix-release_5.0-1+buster_all.deb 
+dpkg -i zabbix-release_5.0-1+buster_all.deb 
 
-#apt update
+apt update
 
 # Versão 8.0 do MySQL
 MYSQL_VERSION=8.0
